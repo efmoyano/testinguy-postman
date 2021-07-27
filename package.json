@@ -1,0 +1,22 @@
+{
+  "name": "perfcomp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:perf": "node perf.js",
+    "test:stress": "cross-env PARALLEL_RUN_COUNT=10 ITERATIONS_COUNT=5 node stress.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "newman": "^5.2.4",
+    "newman-reporter-html": "^1.0.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
