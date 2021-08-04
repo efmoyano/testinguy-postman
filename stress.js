@@ -7,9 +7,10 @@ const PARALLEL_RUN_COUNT = process.env.PARALLEL_RUN_COUNT || 1;
 const ITERATIONS_COUNT = process.env.ITERATIONS_COUNT || 1;
 
 const parametersForTestRun = {
-  collection: path.join(__dirname, "postman/postman_collection.json"),
-  environment: path.join(__dirname, "postman/postman_environment.json"),
+  collection: path.join(__dirname, "postman/TestingUY.postman_collection.json"),
+  environment: path.join(__dirname, "postman/Development.postman_environment.json"),
   iterationCount: ITERATIONS_COUNT,
+  reporters: ["cli"],
 };
 
 parallelCollectionRun = function (done) {
